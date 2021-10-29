@@ -16,8 +16,8 @@ Making a simple pipeline Extract Transform and Load automated using Airflow
 
 ## Milstone
 * Connect Database postgresql windows 10 from WSL
-* Extract costumer data and make an table first-name last-name based on payment_id from table payment database DVDRental
-* *hint* Create data-bulk before this day and count based payement_id
+* Display the 5 country/genre-film who the most rent every-day(choose one)
+* *hint* Create data-bulk before this day and count based payement_id to get the amount of customer/country/genre-film
 
 ## Setup Database Postgre SQL
 * Install PostgreSQL
