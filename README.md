@@ -16,7 +16,7 @@ Making a simple pipeline Extract Transform and Load automated using Airflow
 
 ## Milstone
 * Connect Database postgresql windows 10 from WSL
-* Display the 5 country/genre-film who the most rent every-day(choose one)
+* Display the 5 country/genre-film who the most rent(accumulate) and display every-day(choose one)
 * *hint* Create data-bulk before this day and count based payement_id to get the amount of customer/country/genre-film
 
 ## Setup Database Postgre SQL
@@ -32,15 +32,15 @@ Making a simple pipeline Extract Transform and Load automated using Airflow
   * Go to Windows Defender Firewall with Advanced Security
   * Choose Inbound Rules
   * Tab action and 'New Rule'
-  * choose port, next
+  * Choose port, next
   * Choose TCP, specific local ports : 5432 (postgres port)
 * Setup connection list who can connect to postgresql
   * Go to `C:\Program Files\PostgreSQL\13\data`
   * Edit pg_hba.conf became 
     '# IPv4 local connections:'
     host    all             all             0.0.0.0/0    	        scram-sha-256
-  * Edt postgresql.conf became :
-    listen_addresses = '*' (uncommend listen_ddresses)
+  * Edit postgresql.conf became :
+    listen_addresses = '*' (uncommend listen_addresses)
 * Connect to Postgresql windows from WSL
   * `su postgres` 
     *type the password*
