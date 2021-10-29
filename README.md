@@ -9,9 +9,9 @@ Making a simple pipeline Extract Transform and Load automated using Airflow
 
 
 * First we ingest database postgres with psycopg2
-* We managed what the table or information we need
+* We managed what the table or information that we need
 * We get the data and transform to dataframe using Pandas
-* Cleansing or fill the blank/null/outliar data
+* Cleansing or fill the blank/null/outlier data
 * Load to internal database or we can do visualization
 
 ## Milstone
