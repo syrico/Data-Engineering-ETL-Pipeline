@@ -23,6 +23,10 @@ Making a simple pipeline Extract Transform and Load automated using Airflow
 * Install PostgreSQL
   * Windows 10: Install downloader from `https://www.postgresql.org/download/`
   * Ubuntu : `sudo apt update`,`sudo apt install postgresql`
+* Set passwd :
+  * `sudo passwd postgres`
+* Start psql service :
+  * `sudo service postgresql start`
 * We can use the DVDRental database from `https://www.postgresqltutorial.com/postgresql-sample-database/` and modify the payment_date with command :
 `update payment set payment_date + interval '1 year'` to run real-time scheduling using airflow
 
