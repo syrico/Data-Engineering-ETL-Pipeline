@@ -4,7 +4,7 @@ Making a simple pipeline Extract Transform and Load automated using Airflow
 ## Road Map
 
 <p align="center">
-  <img width="460" src="https://github.com/syrico/Data-Engineering-ETL-Pipeline/blob/main/ETL_project.png?raw=true" alt="Sublime's custom image"/>
+  <img width="640" src="https://github.com/syrico/Data-Engineering-ETL-Pipeline/blob/main/ETL_project.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 
