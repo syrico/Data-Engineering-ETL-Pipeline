@@ -66,3 +66,5 @@ Making a simple pipeline Extract Transform and Load automated using Airflow
       * `airflow initdb`
       * `airflow info`
       * `nano airflow.cfg` (make sure edit in the folder of airflow based on airflow info)
+      * change sql_alchemy_conn to `sql_alchemy_conn = postgresql+psycopg2://airflow_user:1234@localhost:5432/airflow_db`
+
