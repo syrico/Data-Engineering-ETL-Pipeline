@@ -50,4 +50,19 @@ Making a simple pipeline Extract Transform and Load automated using Airflow
     *type the password*
   * `psql -h 'ip address win10' -U postgres -d DVDRental -p 5432` 
     *type the password*
-
+    
+## Install Airflow 1.10.15 using Python 3.7
+  *  Ubuntu 18.04   
+      `AIRFLOW_VERSION=1.10.15`
+      `PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)"`
+      `CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"`
+      `pip install "apache-airflow[all]==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"`
+  *  Some additional Packages:
+     `sudo apt install python3.7-dev `
+     `pip install SQLAlchemy==1.3.23 `
+     `pip install Flask-SQLAlchemy==2.4.4`
+     `pip install wtforms==2.3.3`
+  *  Setting Airflow :
+      * `airflow initdb`
+      * `airflow info`
+      * `nano airflow.cfg` (make sure edit in the folder of airflow based on airflow info)
